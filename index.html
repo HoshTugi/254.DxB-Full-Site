@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>254.DxB - Premium Picks from DxB to 254</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>254.DxB</h1>
+        <p class="tagline">Premium Picks from DxB to 254</p>
+    </header>
+
+    <section class="hero">
+        <img src="https://via.placeholder.com/1200x400?text=Fashion+Items+|+Car+Parts+|+Home+Goods" alt="Hero Image">
+    </section>
+
+    <section class="about">
+        <h2>About Us</h2>
+        <p>We prioritize the sourcing and delivery of goods to our clients in a professional and timely fashion.</p>
+    </section>
+
+    <section class="services">
+        <h2>What We Offer</h2>
+        <ul>
+            <li>🔧 Car Spare Parts (e.g., Nosecuts, Halfcuts)</li>
+            <li>👗 Fashion Items & Accessories</li>
+            <li>🏠 Home Goods & Electronics</li>
+            <li>🛍️ Personal Shopping Across All Categories</li>
+        </ul>
+    </section>
+
+    <section class="order-form">
+        <h2>Place Your Order</h2>
+        <form onsubmit="sendToWhatsApp(); return false;">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <textarea id="order" placeholder="Describe what you want to order..." required></textarea>
+            <select id="payment">
+                <option value="M-Pesa">M-Pesa</option>
+                <option value="Bank Transfer">Bank Transfer</option>
+                <option value="Cash on Delivery">Cash on Delivery</option>
+            </select>
+            <button type="submit">Submit Order via WhatsApp</button>
+        </form>
+    </section>
+
+    <section class="contact">
+        <h2>Contact Us</h2>
+        <p>WhatsApp: <a href="https://wa.me/971557601389" target="_blank">+971 55 760 1389</a></p>
+        <p>Email: <a href="mailto:support@254dxb.com">support@254dxb.com</a></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 254.DxB. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function sendToWhatsApp() {
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const order = document.getElementById('order').value;
+            const payment = document.getElementById('payment').value;
+
+            const message = `Hello! I'd like to order:%0AName: ${name}%0AEmail: ${email}%0AOrder: ${order}%0APayment Method: ${payment}`;
+            const phoneNumber = '971557601389';
+            window.open(`https://wa.me/${phoneNumber}?text=${message}`, '_blank');
+        }
+    </script>
+</body>
+</html>

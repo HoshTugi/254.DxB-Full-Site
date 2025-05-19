@@ -1,0 +1,76 @@
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+header {
+    background-color: #1b2a41;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.tagline {
+    font-style: italic;
+    color: #b0bec5;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
+.about, .services, .order-form, .contact {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.services ul {
+    list-style: none;
+    padding: 0;
+}
+
+.services li {
+    margin: 10px 0;
+    font-size: 1.1em;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+input, textarea, select {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #2a3f5f;
+    color: white;
+    padding: 14px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #3c587d;
+}
+
+footer {
+    background-color: #1b2a41;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}
